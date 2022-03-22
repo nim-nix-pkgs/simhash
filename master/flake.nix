@@ -8,8 +8,8 @@
   inputs.flakeNimbleLib.inputs.nixpkgs.follows = "nixpkgs";
   
   inputs.src-simhash-master.flake = false;
+  inputs.src-simhash-master.ref   = "refs/heads/master";
   inputs.src-simhash-master.owner = "bung87";
-  inputs.src-simhash-master.ref   = "master";
   inputs.src-simhash-master.repo  = "simhash-nim";
   inputs.src-simhash-master.type  = "github";
   
