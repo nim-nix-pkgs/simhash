@@ -3,10 +3,12 @@
     "cligen": {
       "inputs": {
         "flakeNimbleLib": [
+          "simhash-master",
           "lc",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "simhash-master",
           "lc",
           "nixpkgs"
         ],
@@ -54,9 +56,11 @@
       "inputs": {
         "cligen": "cligen",
         "flakeNimbleLib": [
+          "simhash-master",
           "flakeNimbleLib"
         ],
         "nixpkgs": [
+          "simhash-master",
           "nixpkgs"
         ],
         "src-lc-v0_9_1": "src-lc-v0_9_1"
@@ -93,9 +97,36 @@
     "root": {
       "inputs": {
         "flakeNimbleLib": "flakeNimbleLib",
-        "lc": "lc",
         "nixpkgs": "nixpkgs",
+        "simhash-master": "simhash-master"
+      }
+    },
+    "simhash-master": {
+      "inputs": {
+        "flakeNimbleLib": [
+          "flakeNimbleLib"
+        ],
+        "lc": "lc",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
         "src-simhash-master": "src-simhash-master"
+      },
+      "locked": {
+        "dir": "master",
+        "lastModified": 1656284009,
+        "narHash": "sha256-XSpvUknVJCZbuxmt0b+BczxazMHD2d74NuTah+qPi4c=",
+        "owner": "nim-nix-pkgs",
+        "repo": "simhash",
+        "rev": "195d8203f3ebcc7fda3bdb4ccde506a2f0c7863a",
+        "type": "github"
+      },
+      "original": {
+        "dir": "master",
+        "owner": "nim-nix-pkgs",
+        "ref": "master",
+        "repo": "simhash",
+        "type": "github"
       }
     },
     "src-cligen-v1_5_24": {
